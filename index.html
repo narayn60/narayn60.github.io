@@ -1,12 +1,24 @@
 ---
 layout: default
-personal_description: >
- I develop things
+
+personal_description: 
+ I'm a full stack developer currently based in Bristol, UK but will be relocating to Toronto in July 2016. 
+
+
+ I code primarily in JavaScript and Python with a focus on the Web. However, I'm always
+ up for giving new things a shot. Outside of web technologies I also have experience in
+ DevOps as well various other areas such as High Performance Computing and Design Verification. 
+
+
+ Looking primarily for full stack positions within the Greater Toronto Area. Email for further information.
+
 details:
  - name: Andrew Stuart
  - location: Toronto, Canada <span class="sub-text">(as of July '16)</span>
+ - employment: Actively Looking
  - education: MEng Computer Science, </br> University of Bristol, UK
  - citizenship: Dual British and Canadian
+
 links:
  - name: github
    username: narayn60
@@ -17,19 +29,21 @@ links:
  - name: twitter
    username: '@narayn60'
    link: https://twitter.com/narayn60
+ - name: stack overflow
+   username: narayn60
+   link: http://stackoverflow.com/users/2348740/narayn60
 
 ---
 
 <div class="home">
   <div class="row home-header">
-    <div class="col-md-4 col-md-offset-2 col-xs-12">
+    <div class="col-md-3 col-md-offset-2 col-xs-12">
       <img class="home-pic img-responsive center-block" src="/assets/images/main.jpg"/>
     </div>
-    <div class="col-md-4">
-      {{ page.personal_description }}
+    <div class="col-md-5 personal-description">
+      {{ page.personal_description | newline_to_br }}
     </div>
   </div>
-
   <div class="row">
     <div class="col-md-4 col-md-offset-2">
       <table class="detail-table">
