@@ -263,8 +263,23 @@
 
 .link-description {
   font-size: 13px;
+  color: yellow;
 }
 
 .sub-text {
   font-size: 10px;
+}
+
+.home-header {
+  margin-bottom: 16px;
+}
+
+.link {
+  cursor: pointer;
+  color: white;
+
+  &:link, &:visited,
+  &:hover, &:focus {
+             color: white;
+           }
 }
