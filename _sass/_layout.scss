@@ -253,5 +253,18 @@
 .home-pic {
   border-radius: 50%;
   width: auto;
-  height: 200px;
+  height: 200px !important;
+  border: 2px solid grey;
+}
+
+.detail-table td {
+  padding: 0px 10px;
+}
+
+.link-description {
+  font-size: 13px;
+}
+
+.sub-text {
+  font-size: 10px;
 }

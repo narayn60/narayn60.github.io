@@ -1,9 +1,63 @@
 ---
 layout: default
+personal_description: >
+ I develop things
+details:
+ - name: Andrew Stuart
+ - location: Toronto, Canada <span class="sub-text">(as of July '16)</span>
+ - education: MEng Computer Science, </br> University of Bristol, UK
+ - citizenship: Dual British and Canadian
+links:
+ - name: github
+   username: narayn60
+   link: https://github.com/narayn60
+ - name: bitbucket
+   username: narayn60
+   link: https://bitbucket.org/narayn60
+ - name: twitter
+   username: '@narayn60'
+   link: https://twitter.com/narayn60
+
 ---
 
 <div class="home">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2 col-xs-12">
+      <img class="home-pic img-responsive center-block" src="/assets/images/main.jpg"/>
+    </div>
+    <div class="col-md-4">
+      {{ page.personal_description }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2">
+      <table class="detail-table">
+        {% for detail_hash in page.details %}
+        {% for detail in detail_hash %}
+        <tr>
+          <td class="link-description"><p>{{ detail[0] }}</p></td>
+          <td><p>{{ detail[1] }}</p></td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+      </table>
+    </div>
 
-  <img class="home-pic" src="/assets/images/main.jpg"/>
-  Testing
+    <div class="col-md-4">
+      <table class="detail-table">
+        {% for link in page.links %}
+        <tr>
+          <td class="link-description">
+            <p>{{ link.name }}</p>
+          </td>
+          <td>
+            <p>
+             <a style="cursor:pointer" href="{{ link.link }}">{{ link.username }}</a>
+            </p>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
 </div>
