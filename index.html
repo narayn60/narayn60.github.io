@@ -2,44 +2,41 @@
 layout: default
 
 personal_description:
- I'm a full stack developer currently based in Toronto, Canada.
+I'm a full stack developer who primarily focuses on backednd, currently based in Berlin, Germany.
 
+For the last 4 years I have been working primarily in Elixir along with a bit of React and TypeScript. I have previously
+worked with Python, and have some experience with go and Java through sideprojects.
 
- I code primarily in JavaScript and Python. I focus primarily on Web Technologies but also have experience in various other areas such as DevOps, High Performance Computing and Design Verification.
-
-
- Currently working as a Web Developer at Oanda. Please Email for further information.
+Currently I am open for new opportunities, ideally within the Berlin area. Please Email for further information.
 
 details:
- - name: Andrew Stuart
- - location: Toronto, Canada
- - employment: Oanda
- - education: First Class Honours, </br>MEng Computer Science, </br> University of Bristol, UK
- - citizenship: Dual British and Canadian
+- name: Andrew Stuart
+- location: Berlin, Germany
+- employment: Actively looking
+- education: First Class Honours, </br>MEng Computer Science, </br> University of Bristol, UK
+- citizenship: Canadian and British
+- work permits: Germany
 
 links:
- - name: email
-   username: narayn60@gmail.com
-   link: "mailto:narayn60@gmail.com"
- - name: github
-   username: narayn60
-   link: https://github.com/narayn60
- - name: bitbucket
-   username: narayn60
-   link: https://bitbucket.org/narayn60
- - name: twitter
-   username: '@narayn60'
-   link: https://twitter.com/narayn60
- - name: stack overflow
-   username: narayn60
-   link: http://stackoverflow.com/users/2348740/narayn60
+- name: email
+username: narayn60@gmail.com
+link: "mailto:narayn60@gmail.com"
+- name: github
+username: narayn60
+link: https://github.com/narayn60
+- name: bitbucket
+username: narayn60
+link: https://bitbucket.org/narayn60
+- name: stack overflow
+username: narayn60
+link: http://stackoverflow.com/users/2348740/narayn60
 
 ---
 
 <div class="home">
   <div class="row home-header">
     <div class="col-md-3 col-md-offset-2 col-xs-12">
-      <img class="home-pic img-responsive center-block" src="/assets/images/main.jpg"/>
+      <img class="home-pic img-responsive center-block" src="/assets/images/main.jpg" />
     </div>
     <div class="col-md-5 personal-description">
       {{ page.personal_description | newline_to_br }}
@@ -51,8 +48,12 @@ links:
         {% for detail_hash in page.details %}
         {% for detail in detail_hash %}
         <tr>
-          <td class="link-description"><p>{{ detail[0] }}</p></td>
-          <td><p>{{ detail[1] }}</p></td>
+          <td class="link-description">
+            <p>{{ detail[0] }}</p>
+          </td>
+          <td>
+            <p>{{ detail[1] }}</p>
+          </td>
         </tr>
         {% endfor %}
         {% endfor %}
@@ -68,7 +69,7 @@ links:
           </td>
           <td>
             <p>
-             <a class="link" href="{{ link.link }}">{{ link.username }}</a>
+              <a class="link" href="{{ link.link }}">{{ link.username }}</a>
             </p>
           </td>
         </tr>
